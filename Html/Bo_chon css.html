@@ -1,0 +1,61 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+      .light
+      {
+      	border: 2px dashed red;
+      	background: blue;
+      	color: yellow;
+      	padding: 20px;
+      }
+      .dark
+      {
+      	background: brown;
+      	color: #fff;
+      	border: 2px solid yellowgreen;
+        padding: 10px;
+      }
+      .rock
+      {
+      	background: #8e44ad;
+      	color: #0be881;
+      	border: 5px solid #f1cef0;
+      	padding: 5px;
+      }
+      :focus
+      {
+      	background-color: red;
+      	color: blue;
+      }
+	</style>
+</head>
+<body>
+	<div id="Nội Dung">
+	</div>
+	<textarea id="Nội dung" name="txt" cols="100px" rows="6px">
+	    XIN CHÀO !
+	</textarea>
+	<br>	
+	<button type="submit" name="txtNd" value="Nội dung Hello"> Nội dung Hello </button> 
+	<button type="submit" name="txtbye" value="Nội dung bye"> Nội dung Bye </button>
+	<br />
+	Màu nền:
+	<select name="idMaunen" id="idMaunen">
+		<option align="center" value="white"> Màu trắng </option>
+		<option align="center" value="dark"> Màu Đen </option>
+		<option align="center" value="yellow"> Màu vàng </option>
+		<option align="center" value="brown"> Màu nâu </option>
+	</select>
+	<br />
+	Kiểu Giao Diện:
+	<select name="idGiaodien" id="idGiaodien">
+		<option value="light"> Nền sáng </option>
+		<option value="dark"> Nền tối </option>
+		<option value="rock"> Nền rock </option>
+	</select>
+</body>
+</html>

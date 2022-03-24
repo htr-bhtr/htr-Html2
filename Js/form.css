@@ -1,0 +1,34 @@
+body {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.alignLeft {
+    text-align: left;
+    border: 1px solid black;
+    background-color:#DDDDDD;
+}
+
+.container{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10%;
+    border: 2px solid black;
+    padding: 5px 75px 5px 75px;
+    background-color: rgb(123, 123, 255);
+}
+
+.alignLeft tr td {
+    padding-bottom: 10px;
+    background-color:#DDDDDD;
+}
+
+.alignLeft tr .head {
+    background-color: rgb(123, 123, 255);
+    padding-bottom: 10px;
+    background-color:#DDDDDD;
+}
+
+p {
+    color: blue;
+}

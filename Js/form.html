@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Giao diện </title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script type="text/javascript" src="form.js"></script>
+</head>
+<body id="send()">
+	<div align="center">
+     	<table border="1" align="center" width="40%" height="20%" bgcolor="#00CCFF">
+     		<form class="container">
+     		<tr>
+     			<td align="center"><b> Order Entry Form </b></td>
+     		</tr>
+     	</table>
+	</div>
+     <br>
+     <div align="center">
+     	<table border="1" align="center" width="40%" height="20%" cellpadding="2" cellspacing="2">
+     		<thead bgcolor="#00CCFF">
+     		<tr>
+     			<th colspan="4"><b> Fill in the details to place an order </b></th>
+     		</tr>
+     	    </thead>
+     	</div>
+     	<div class="head">
+     		<tr>
+     			<td align="center" colspan="2"> Customer_name </td>
+     			<td align="center" width="400">
+     				<input type="text" name="ho_ten" placeholder="Nhập tên" autocomplete="address-level2">
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2"> Customer address:  </td>
+     			<td align="center" width="400">
+     				<input type="text" name="dia_chi" placeholder="Nhập địa chỉ" autocomplete="address-level2">
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2"> Product name: </td>
+     			<td align="center">
+     				<select align="center" name="prod_name" id="prod_name" onchange="setPrice()">
+     					<option value="Select"> Select </option>
+     					<option value="Monitor"> Monitor </option>
+     					<option value="Mouse"> Mouse </option>
+     					<option value="Keyboard"> Keyboard </option>
+     					<option value="Printer"> Printer </option>
+     				</select>
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2"> Unit price($) </td>
+     			<td align="center" width="400">
+     				<input type="text" name="money" placeholder="Nhập số tiền tương ứng" autocomplete="address-level2" id="unit_price" readonly>
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2"> Quanlity </td>
+     			<td align="center" width="400">
+     				<input type="text" name="chat_luong" placeholder="Nhập chất lượng" autocomplete="address-level2" id="quantity">
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2"> Amount($) </td>
+     			<td align="center" width="400">
+     				<input type="text" name="money" placeholder="Nhập số lượng" autocomplete="address-level2" id="amount" readonly>
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2"> Payment mode </td>
+     			<td align="center">
+     				<select align="center">
+     					<option value="cash"> Cash </option>
+     					<option value="check"> Check </option>
+     					<option value="credit card"> Credit card </option>
+     					<option value="debit card"> Debit card </option>
+     				</select>
+     			</td>
+     		</tr>
+     		<tr>
+     			<td align="center" colspan="2">
+     				<input type="submit" value="Submit" onclick="save()">
+     			</td>
+     			<td align="center" colspan="2">
+     				<input type="reset" value="Reset">
+     			</td>
+     		</tr>
+     	</table>
+     </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+	margin: 0px;
+	padding:  0px;
+	box-sizing: content-box;
+}
+body{
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #323337;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+.container{
+	margin: 0px auto;
+	max-width: 1250px;
+}
+header{
+	width: 100%;
+	height: 65px;
+}
+header .container{
+	display: flex;
+	align-items: center;
+}
+header .logo{
+	width: 25%;
+}
+header .logo a{
+	color: #3ab879;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+header .Menu{
+	width: 60%;
+}
+header .Menu ul{
+	display: flex;
+}
+header .Menu ul li a{
+	padding: 0px 20px 0px 20px;
+	text-transform: uppercase;
+}
+header .Menu ul li a:hover{
+	color:#3ab879;
+}
+header .sidebar-top{
+	display: flex;
+}
+header .sidebar-top a{
+	padding: 20px;
+	display: flex;
+	width: 50px;
+	position: relative;
+}
+header .sidebar-top a span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #3ab879;
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+}
+#slider .slider-item{
+	width: 100%;
+	height: 800px;
+}
+.slider-item h2{
+	position: absolute;
+	top: 45%;
+	left: 8%;
+	font-size: 3rem;
+	text-transform: uppercase;
+
+}
+.slider-item h2 small{
+	display: block;
+	color:  #3ab879 ;
+}

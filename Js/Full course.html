@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+    <div align="center">
+        <table class="alignCenter">
+            <form>
+            <tr>
+                <td>
+                    Order Entry Form
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div align="center">
+        <table class="alignLeft">
+            <tr>
+                <td colspan="2" class="head">
+                    Fill in the details to place an order.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Your Name
+                </td>
+                <td>
+                    <input type="text" name="customer_name" placeholder="VD: Ngo Xuan A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                    <input type="text" name="customer_address" placeholder="VD: Bac Ninh">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Product Name
+                </td>
+                <td>
+                    <select name="prod_name" id="prod_name" onchange="setPrice()">
+                        <option value="empty">--Select--</option>
+                        <option value="monitor" name="monitor">Monitor</option>
+                        <option value="mouse" name="mouse">Mouse</option>
+                        <option value="keyboard" name="keyboard">Keyboard</option>
+                        <option value="printer" name="printer">Printer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Unit Price($)
+                </td>
+                <td>
+                    <input type="text" id="unit_price" placeholder="Unit Price" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Quantity
+                </td>
+                <td>
+                    <input type="text" id="quantity" placeholder="VD: 1;2;...">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amount($)
+                </td>
+                <td>
+                    <input type="text" id="amount" placeholder="Total" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Payment Method
+                </td>
+                <td>
+                    <select name="payment_method">
+                        <option value="cash">Cash</option>
+                        <option value="check">Check</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p onclick="save()">--> OK</p>
+                </td>
+                <td>
+                    <input type="reset" name="reset">
+                </td>
+            </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
+</body>
+</html>		
